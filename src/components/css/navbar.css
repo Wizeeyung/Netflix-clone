@@ -1,0 +1,67 @@
+.navbar {
+  padding: 20px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 200;
+  width: 100%;
+}
+
+.navbar h1{
+  color: red;
+  margin: 0;
+  cursor: pointer;
+}
+
+.navbar .nav-link{
+  text-decoration: none;
+}
+
+a.nav-links{
+  /* text-decoration: none; */
+  color: inherit;
+  
+}
+
+.nav-btn .nav-link-btn{
+  background-color: red;
+  outline: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.nav-btn .nav-link-btn:hover{
+  background-color: rgb(230, 19, 19);
+}
+
+
+.nav-btn a.nav-links button.nav-link-btn{
+  background-color: red;
+  outline: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.nav-btn a.nav-links button.nav-link-btn:hover{
+  background-color: rgb(230, 19, 19);
+}
+
+.nav-btn button:first-child{
+  background-color: transparent;
+  outline: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+}
