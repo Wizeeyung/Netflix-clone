@@ -93,9 +93,15 @@ background-color: rgb(230, 19, 19);
 
 /* ..........Mobile Responsiveness........ */
 @media all and (max-width: 420px) {
+
+  .signup{
+    height: 100vh;
+  }
+
   .signup img{
     position: absolute;
     height: 100%;
+    
   }
   
 }

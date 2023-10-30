@@ -22,7 +22,7 @@ const Navbar =  () =>{
   return(
     <div className='navbar'>
       {user ? <Link to='/home'className='nav-link'><h1>NETFLIX</h1></Link> : 
-      <Link to='/'className='nav-link'><h1>NETFLIX</h1></Link>}
+      <Link to='/'className='nav-link'><h1>WIZFLIX</h1></Link>}
       
       {user?.email ? (<div className='nav-btn'>
         <Link to='/account' className='nav-linkss'><button>Account</button></Link>
