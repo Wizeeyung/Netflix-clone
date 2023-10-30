@@ -2,7 +2,6 @@ import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import './css/navbar.css'
 import { UserAuth } from '../context/AuthContext'
-import {SpinnerDotted} from 'spinners-react'
 
 const Navbar =  () =>{
 
@@ -16,12 +15,15 @@ const Navbar =  () =>{
       navigate('/')
     }catch(error){
       console.log(error)
+      alert(error.message)
     }
   }
 
   return(
     <div className='navbar'>
-      <Link to='/'className='nav-link'><h1>NETFLIX</h1></Link>
+      {user ? <Link to='/home'className='nav-link'><h1>NETFLIX</h1></Link> : 
+      <Link to='/'className='nav-link'><h1>NETFLIX</h1></Link>}
+      
       {user?.email ? (<div className='nav-btn'>
         <Link to='/account' className='nav-linkss'><button>Account</button></Link>
         <button className='nav-link-btn' onClick={handleLogout}>Log Out</button>

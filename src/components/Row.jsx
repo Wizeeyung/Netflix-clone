@@ -10,7 +10,6 @@ import './css/row.css'
 const Row = ({title, fetchUrl, rowId}) =>{
   
   const [movies, setMovies] = useState([]);
-  const [like, setlike] = useState(false);
 
   
   useEffect(()=>{
@@ -20,9 +19,6 @@ const Row = ({title, fetchUrl, rowId}) =>{
     })
   }, [fetchUrl])
 
-  const liked = () =>{
-    setlike(!like)
-  }
   //Function to allow slider to move left and getting the rowId for each role so as to have distinct behaviour
   const sliderLeft = () =>{
     var slider = document.getElementById('slider' + rowId);
@@ -43,7 +39,7 @@ const Row = ({title, fetchUrl, rowId}) =>{
       <BiSolidChevronLeft className='left-btn' onClick={sliderLeft} size={25}/>
         <div className='rows' id={'slider' + rowId}>
           {movies?.map((movie)=>(
-            <Movie key={movie.id} movie={movie} liked={liked} like={like}  />
+            <Movie key={movie.id} movie={movie}   />
           ))}
         </div>
         <BiSolidChevronRight className='right-btn' onClick={sliderRight} size={25}/>

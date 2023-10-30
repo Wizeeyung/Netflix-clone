@@ -40,7 +40,7 @@ const Login = () => {
     setError('')
     try{
       await login(email, passowrd)
-      navigate('/')
+      navigate('/home')
       updateUserDisplayName(email)
     } catch (error){
       setError(error.message)

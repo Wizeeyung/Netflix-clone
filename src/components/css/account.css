@@ -12,6 +12,13 @@
   padding-left: 5%;
 }
 
+.acct-p{
+  position: absolute;
+  top: 25%;
+  font-size: 20px;
+  padding-left: 5%;
+}
+
 .acct-movies-container{
   padding: 30px 5%;
   display: flex;

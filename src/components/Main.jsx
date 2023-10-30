@@ -9,8 +9,6 @@ const Main = () => {
   const [movies, setMovies] = useState([])
   const [read, setRead] = useState(false)
   const [selectedMovie, setSelectedMovie] = useState(null);
-  console.log(movies)
-  //This code only allows to pick one movie from the whole array of movies
  
 
   useEffect(()=>{
@@ -32,9 +30,7 @@ const Main = () => {
   }
 
   const readMore = ()=>{
-    // e.preventDefault()
-    setRead(true)
-    
+    setRead(true) 
   }
 
   return (
