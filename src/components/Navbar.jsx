@@ -29,7 +29,7 @@ const Navbar =  () =>{
         <button className='nav-link-btn' onClick={handleLogout}>Log Out</button>
       </div>) : (<div className='nav-btn'>
         <Link to='/login' className='nav-linkss'><button>Sign In</button></Link>
-        <Link to='/signup' className='nav-links'><button className='nav-link-btn'>Sign Up</button></Link>
+        <Link to='/' className='nav-links'><button className='nav-link-btn'>Sign Up</button></Link>
       </div>)}
       
 
